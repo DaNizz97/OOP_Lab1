@@ -11,37 +11,38 @@ void IniParser::Initialize(const char *filename_cstr)  throw(exc_io) {
         throw exc_io("EXCEPTION: \"File not found!\"");
     }
     string lineOfIniFile, sectionName, parameterName, parameterValue;
-    getline(file, lineOfIniFile);
     int equalPosition, splittingPosition;
-    while (!file.eof()) {
-        if (isLineComment(lineOfIniFile) || lineOfIniFile.empty()) {
-            getline(file, lineOfIniFile);
+
+    while (!file.eof() && getline(file, lineOfIniFile)) {
+        lineOfIniFile = eraseComments(lineOfIniFile);
+        if (lineOfIniFile.empty()) {
             continue;
         }
         if (lineOfIniFile[0] == '[') {
             sectionName = lineOfIniFile;
             getline(file, lineOfIniFile);
-            while (lineOfIniFile[0] != '[' && !file.eof()) {
-                if (isLineComment(lineOfIniFile) || lineOfIniFile.empty()) {
-                    getline(file, lineOfIniFile);
-                    continue;
-                }
-                if (lineOfIniFile[0] != ';') {
-                    lineOfIniFile.erase(remove(lineOfIniFile.begin(), lineOfIniFile.end(), ' '), lineOfIniFile.end());
-                    equalPosition = (int) lineOfIniFile.find('=');
-                    parameterName = lineOfIniFile.substr(0, (unsigned long long int) equalPosition);
-                    parameterValue = lineOfIniFile.substr((unsigned long long int) equalPosition + 1);
-                    splittingPosition = (int) parameterValue.find(';');
-                    if (splittingPosition != -1) {
-                        parameterValue = parameterValue.substr(0, (unsigned long long int) (splittingPosition));
-                    }
+            lineOfIniFile = eraseComments(lineOfIniFile);
+        }
+        while (lineOfIniFile[0] != '[' && !file.eof() && getline(file, lineOfIniFile)) {
+            lineOfIniFile = eraseComments(lineOfIniFile);
+            if (lineOfIniFile[0] == '[') {
+                sectionName = lineOfIniFile;
+                break;
+            }
+            if (lineOfIniFile.empty()) {
+                continue;
+            }
+            if (!isLineComment(lineOfIniFile)) {
+                lineOfIniFile.erase(remove(lineOfIniFile.begin(), lineOfIniFile.end(), ' '), lineOfIniFile.end());
+                equalPosition = (int) lineOfIniFile.find('=');
+                parameterName = lineOfIniFile.substr(0, (unsigned long long int) equalPosition);
+                parameterValue = lineOfIniFile.substr((unsigned long long int) equalPosition + 1);
 
-                    dataStore[sectionName][parameterName] = parameterValue;
-                }
-                getline(file, lineOfIniFile);
+                dataStore[sectionName][parameterName] = parameterValue;
             }
         }
     }
+
     equalPosition = (int) lineOfIniFile.find('=');
     parameterName = lineOfIniFile.substr(0, (unsigned long long int) equalPosition - 1);
     parameterValue = lineOfIniFile.substr((unsigned long long int) equalPosition + 2);
@@ -80,11 +81,17 @@ bool IniParser::IsHaveParam(const char *section_name,
     return checkParamExc;
 }
 
-
-bool IniParser::isLineComment(std::string &lineOfIniFile) const{
+bool IniParser::isLineComment(std::string &lineOfIniFile) const {
     return lineOfIniFile[0] == ';';
 }
 
+std::string IniParser::eraseComments(std::string &lineOfIniFile) const {
+    size_t position = lineOfIniFile.find(';');
+    if (position != -1) {
+        return lineOfIniFile.substr(0, position);
+    }
+    return lineOfIniFile;
+}
 
 IniParser::~IniParser() = default;
 

@@ -58,6 +58,7 @@ public:
     }
 private:
     bool isLineComment(std::string &lineOfIniFile) const;
+    std::string eraseComments(std::string &lineOfIniFile) const;
 };
 
 #endif //LABA1_INIPARSER_H

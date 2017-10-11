@@ -22,7 +22,6 @@ int main()
             k = iniParser.GetValue<int>(section, parameter);
             cout << k << endl;
         }
-        iniParser.print();
     }
     catch (exception &e){
         e.what();
