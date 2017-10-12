@@ -32,21 +32,14 @@ void IniParser::Initialize(const char *filename_cstr)  throw(exc_io) {
             if (lineOfIniFile.empty()) {
                 continue;
             }
-            if (!isLineComment(lineOfIniFile)) {
-                lineOfIniFile.erase(remove(lineOfIniFile.begin(), lineOfIniFile.end(), ' '), lineOfIniFile.end());
-                equalPosition = (int) lineOfIniFile.find('=');
-                parameterName = lineOfIniFile.substr(0, (unsigned long long int) equalPosition);
-                parameterValue = lineOfIniFile.substr((unsigned long long int) equalPosition + 1);
-
-                dataStore[sectionName][parameterName] = parameterValue;
-            }
+            lineOfIniFile.erase(remove(lineOfIniFile.begin(), lineOfIniFile.end(), ' '), lineOfIniFile.end());
+            equalPosition = (int) lineOfIniFile.find('=');
+            parameterName = lineOfIniFile.substr(0, (unsigned long long int) equalPosition);
+            parameterValue = lineOfIniFile.substr((unsigned long long int) equalPosition + 1);
+            dataStore[sectionName][parameterName] = parameterValue;
         }
     }
 
-    equalPosition = (int) lineOfIniFile.find('=');
-    parameterName = lineOfIniFile.substr(0, (unsigned long long int) equalPosition - 1);
-    parameterValue = lineOfIniFile.substr((unsigned long long int) equalPosition + 2);
-    dataStore[sectionName][parameterName] = parameterValue;
 }
 
 bool IniParser::IsHaveSection(const char *section_name) const throw(exc_ini_not_initied) {
@@ -79,10 +72,6 @@ bool IniParser::IsHaveParam(const char *section_name,
         throw exc_ini_not_found("EXCEPTION: \"Parameter not found!\"");
     }
     return checkParamExc;
-}
-
-bool IniParser::isLineComment(std::string &lineOfIniFile) const {
-    return lineOfIniFile[0] == ';';
 }
 
 std::string IniParser::eraseComments(std::string &lineOfIniFile) const {

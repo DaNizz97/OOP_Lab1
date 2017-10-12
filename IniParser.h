@@ -57,7 +57,6 @@ public:
         return paramValue;
     }
 private:
-    bool isLineComment(std::string &lineOfIniFile) const;
     std::string eraseComments(std::string &lineOfIniFile) const;
 };
 
