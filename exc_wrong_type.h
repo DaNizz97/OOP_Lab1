@@ -5,7 +5,6 @@
 #ifndef LABA1_EXC_WRONG_TYPE_H
 #define LABA1_EXC_WRONG_TYPE_H
 
-
 #include "allExceptions.h"
 
 class exc_wrong_type: public allExceptions {

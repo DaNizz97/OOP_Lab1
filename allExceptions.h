@@ -7,12 +7,10 @@
 #include <exception>
 #include <iostream>
 
-using namespace std;
-
-class allExceptions: public exception {
+class allExceptions: public std::exception {
 public:
     explicit allExceptions(const char *message){
-        cout << message << endl;
+        std::cout << message << std::endl;
     }
 };
 

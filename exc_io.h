@@ -5,7 +5,6 @@
 #ifndef LABA1_IOEXCEPTION_H
 #define LABA1_IOEXCEPTION_H
 #include "allExceptions.h"
-using namespace std;
 
 class exc_io: public allExceptions {
 public:

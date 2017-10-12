@@ -5,7 +5,6 @@
 #ifndef LABA1_EXC_CFG_NOT_FOUND_H
 #define LABA1_EXC_CFG_NOT_FOUND_H
 #include "allExceptions.h"
-using namespace std;
 
 class exc_ini_not_found: public allExceptions {
 public:

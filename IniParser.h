@@ -15,7 +15,7 @@
 #include "exc_wrong_type.h"
 class IniParser {
 private:
-    map<string, map<string, string>> dataStore;
+    std::map<std::string,std::map<std::string, std::string>> dataStore;
 
 public:
 
@@ -37,7 +37,7 @@ public:
             throw exc_ini_not_initied("EXCEPTION: \"File is not initialized\"");
         }
         bool check = false;
-        map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>::const_iterator it;
+        std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>::const_iterator it;
         for (it = dataStore.at(section_name).begin(); it != dataStore.at(section_name).end(); ++it) {
             if (param_name == it->first) {
                 check = true;
@@ -46,8 +46,8 @@ public:
         if (!check) {
             throw exc_ini_not_found("EXCEPTION: \"Parameter not found!\"");
         }
-        string str = dataStore.at(section_name).at(param_name);
-        istringstream parse(str);
+        std::string str = dataStore.at(section_name).at(param_name);
+        std::istringstream parse(str);
         T paramValue;
         parse >> paramValue;
         /*
@@ -57,7 +57,13 @@ public:
         return paramValue;
     }
 private:
-    std::string eraseComments(std::string &lineOfIniFile) const;
+    void eraseComments(std::string &lineOfIniFile) const;
+
+    bool isLineSection(const std::string &lineOfIniFile) const;
+
+    void eraseBracketsFromSection(std::string &lineOfIniFile) const;
+
+    void assignmentValue(std::string &lineOfIniFile, const std::string &sectionName, std::string &parametrName, std::string &parametrValue);
 };
 
 #endif //LABA1_INIPARSER_H

@@ -4,6 +4,7 @@
 #include "IniParser.h"
 
 using namespace std;
+typedef unsigned long long int ulli;
 
 void IniParser::Initialize(const char *filename_cstr)  throw(exc_io) {
     ifstream file(filename_cstr);
@@ -11,35 +12,38 @@ void IniParser::Initialize(const char *filename_cstr)  throw(exc_io) {
         throw exc_io("EXCEPTION: \"File not found!\"");
     }
     string lineOfIniFile, sectionName, parameterName, parameterValue;
-    int equalPosition, splittingPosition;
-
-    while (!file.eof() && getline(file, lineOfIniFile)) {
-        lineOfIniFile = eraseComments(lineOfIniFile);
+    while ( !file.eof() && getline(file, lineOfIniFile) ) {
+        eraseComments(lineOfIniFile);
         if (lineOfIniFile.empty()) {
             continue;
         }
-        if (lineOfIniFile[0] == '[') {
+        if ( isLineSection(lineOfIniFile) ) {
+            eraseBracketsFromSection(lineOfIniFile);
             sectionName = lineOfIniFile;
-            getline(file, lineOfIniFile);
-            lineOfIniFile = eraseComments(lineOfIniFile);
         }
-        while (lineOfIniFile[0] != '[' && !file.eof() && getline(file, lineOfIniFile)) {
-            lineOfIniFile = eraseComments(lineOfIniFile);
-            if (lineOfIniFile[0] == '[') {
+        assignmentValue(lineOfIniFile, sectionName, parameterName, parameterValue);
+        while ( !isLineSection(lineOfIniFile) && !file.eof() && getline(file, lineOfIniFile) ) {
+            eraseComments(lineOfIniFile);
+            if (isLineSection(lineOfIniFile)) {
+                eraseBracketsFromSection(lineOfIniFile);
                 sectionName = lineOfIniFile;
                 break;
             }
             if (lineOfIniFile.empty()) {
                 continue;
             }
-            lineOfIniFile.erase(remove(lineOfIniFile.begin(), lineOfIniFile.end(), ' '), lineOfIniFile.end());
-            equalPosition = (int) lineOfIniFile.find('=');
-            parameterName = lineOfIniFile.substr(0, (unsigned long long int) equalPosition);
-            parameterValue = lineOfIniFile.substr((unsigned long long int) equalPosition + 1);
-            dataStore[sectionName][parameterName] = parameterValue;
+            assignmentValue(lineOfIniFile, sectionName, parameterName, parameterValue);
         }
     }
 
+}
+
+void IniParser::assignmentValue(string &lineOfIniFile, const string &sectionName, string &parameterName, string &parameterValue) {
+    lineOfIniFile.erase(remove(lineOfIniFile.begin(), lineOfIniFile.end(), ' '), lineOfIniFile.end());
+    ulli equalPosition = lineOfIniFile.find('=');
+    parameterName = lineOfIniFile.substr(0, equalPosition);
+    parameterValue = lineOfIniFile.substr(equalPosition + 1);
+    dataStore[sectionName][parameterName] = parameterValue;
 }
 
 bool IniParser::IsHaveSection(const char *section_name) const throw(exc_ini_not_initied) {
@@ -74,13 +78,23 @@ bool IniParser::IsHaveParam(const char *section_name,
     return checkParamExc;
 }
 
-std::string IniParser::eraseComments(std::string &lineOfIniFile) const {
+void IniParser::eraseComments(std::string &lineOfIniFile) const {
     size_t position = lineOfIniFile.find(';');
     if (position != -1) {
-        return lineOfIniFile.substr(0, position);
+        lineOfIniFile = lineOfIniFile.substr(0, position);
     }
-    return lineOfIniFile;
 }
+
+bool IniParser::isLineSection(const std::string &lineOfIniFile) const {
+    return lineOfIniFile[0] == '[';
+}
+
+void IniParser::eraseBracketsFromSection(std::string &lineOfIniFile) const {
+    ulli firstBracket = lineOfIniFile.find('[');
+    ulli secondBracket = lineOfIniFile.find(']');
+    lineOfIniFile = lineOfIniFile.substr(firstBracket + 1, secondBracket - 1);
+}
+
 
 IniParser::~IniParser() = default;
 
