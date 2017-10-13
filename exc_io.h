@@ -8,7 +8,7 @@
 
 class exc_io: public allExceptions {
 public:
-    explicit exc_io(const char *message) : allExceptions(message) {}
+    explicit exc_io(const std::string &message) : allExceptions(message) {}
 };
 
 

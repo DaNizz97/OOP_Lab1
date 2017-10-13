@@ -9,7 +9,7 @@
 
 class allExceptions: public std::exception {
 public:
-    explicit allExceptions(const char *message){
+    explicit allExceptions(const std::string &message){
         std::cout << message << std::endl;
     }
 };

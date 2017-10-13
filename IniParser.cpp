@@ -35,7 +35,7 @@ void IniParser::Initialize(const char *filename_cstr)  throw(exc_io) {
             assignmentValue(lineOfIniFile, sectionName, parameterName, parameterValue);
         }
     }
-
+    init = true;
 }
 
 void IniParser::assignmentValue(string &lineOfIniFile, const string &sectionName, string &parameterName, string &parameterValue) {
@@ -46,24 +46,27 @@ void IniParser::assignmentValue(string &lineOfIniFile, const string &sectionName
     dataStore[sectionName][parameterName] = parameterValue;
 }
 
-bool IniParser::IsHaveSection(const char *section_name) const throw(exc_ini_not_initied) {
-    if (dataStore.empty()) {
-        throw exc_ini_not_initied("EXCEPTION: \"File is not initialized\"");
+bool IniParser::IsHaveSection(const std::string &section_name) const throw(exc_ini_not_found, exc_ini_not_initialized) {
+    if (!init) {
+        throw exc_ini_not_initialized("EXCEPTION: \"File is not initialized!\"");
     }
-    map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>::const_iterator it;
     bool check = false;
+    map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>::const_iterator it;
     for (it = dataStore.begin(); it != dataStore.end(); ++it) {
         if (section_name == it->first) {
             check = true;
         }
     }
+    if(!check){
+        throw exc_ini_not_found("EXCEPTION: \"Section \"" + section_name + "\" not found!\"");
+    }
     return check;
 }
 
-bool IniParser::IsHaveParam(const char *section_name,
-                            const char *param_name) const throw(exc_ini_not_initied, exc_ini_not_found) {
-    if (dataStore.empty()) {
-        throw exc_ini_not_initied("EXCEPTION: \"File is not initialized\"");
+bool IniParser::IsHaveParam(const std::string &section_name,
+                            const std::string &param_name) const throw(exc_ini_not_initialized, exc_ini_not_found) {
+    if (!init) {
+        throw exc_ini_not_initialized("EXCEPTION: \"File is not initialized!\"");
     }
     bool checkParamExc = false;
     map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>::const_iterator it;
@@ -73,7 +76,7 @@ bool IniParser::IsHaveParam(const char *section_name,
         }
     }
     if (!checkParamExc) {
-        throw exc_ini_not_found("EXCEPTION: \"Parameter not found!\"");
+        throw exc_ini_not_found("EXCEPTION: \"Parameter \"" + param_name + "\" not found!\"");
     }
     return checkParamExc;
 }

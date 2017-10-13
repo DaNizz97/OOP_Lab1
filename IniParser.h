@@ -10,7 +10,7 @@
 #include <map>
 #include <algorithm>
 #include "exc_io.h"
-#include "exc_ini_not_initied.h"
+#include "exc_ini_not_initialized.h"
 #include "exc_ini_not_found.h"
 #include "exc_wrong_type.h"
 class IniParser {
@@ -25,16 +25,16 @@ public:
 
     void Initialize(const char *fileName) throw(exc_io);
 
-    bool IsHaveSection(const char *section_name) const throw(exc_ini_not_initied);
+    bool IsHaveSection(const std::string &section_name) const throw(exc_ini_not_found, exc_ini_not_initialized);
 
     bool
-    IsHaveParam(const char *section_name, const char *param_name) const throw(exc_ini_not_found, exc_ini_not_initied);
+    IsHaveParam(const std::string &section_name, const std::string &param_name) const throw(exc_ini_not_found, exc_ini_not_initialized);
 
     template<class T>
     T GetValue(const char *section_name,
-               const char *param_name) const throw(exc_ini_not_found, exc_ini_not_initied, exc_wrong_type) {
+               const char *param_name) const throw(exc_ini_not_found, exc_ini_not_initialized, exc_wrong_type) {
         if (dataStore.empty()) {
-            throw exc_ini_not_initied("EXCEPTION: \"File is not initialized\"");
+            throw exc_ini_not_initialized("EXCEPTION: \"File is not initialized\"");
         }
         bool check = false;
         std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>::const_iterator it;
@@ -57,6 +57,8 @@ public:
         return paramValue;
     }
 private:
+
+    bool init = false;
     void eraseComments(std::string &lineOfIniFile) const;
 
     bool isLineSection(const std::string &lineOfIniFile) const;

@@ -8,7 +8,7 @@
 
 class exc_ini_not_found: public allExceptions {
 public:
-    explicit exc_ini_not_found(const char *message) : allExceptions(message) {}
+    explicit exc_ini_not_found(const std::string &message) : allExceptions(message) {}
 
 };
 

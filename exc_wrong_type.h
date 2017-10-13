@@ -9,7 +9,7 @@
 
 class exc_wrong_type: public allExceptions {
 public:
-    explicit exc_wrong_type(const char *message) : allExceptions(message) {}
+    explicit exc_wrong_type(const std::string &message) : allExceptions(message) {}
 };
 
 
