@@ -51,9 +51,8 @@ bool IniParser::IsHaveSection(const std::string &section_name) const throw(exc_i
         throw exc_ini_not_initialized("EXCEPTION: \"File is not initialized!\"");
     }
     bool check = false;
-    map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>>::const_iterator it;
-    for (it = dataStore.begin(); it != dataStore.end(); ++it) {
-        if (section_name == it->first) {
+    for (auto it : dataStore) {
+        if (section_name == it.first) {
             check = true;
         }
     }
@@ -69,9 +68,8 @@ bool IniParser::IsHaveParam(const std::string &section_name,
         throw exc_ini_not_initialized("EXCEPTION: \"File is not initialized!\"");
     }
     bool checkParamExc = false;
-    map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>::const_iterator it;
-    for (it = dataStore.at(section_name).begin(); it != dataStore.at(section_name).end(); ++it) {
-        if (param_name == it->first) {
+    for (auto it : dataStore.at(section_name)) {
+        if (param_name == it.first) {
             checkParamExc = true;
         }
     }

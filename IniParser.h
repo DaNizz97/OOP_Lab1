@@ -31,15 +31,14 @@ public:
     IsHaveParam(const std::string &section_name, const std::string &param_name) const throw(exc_ini_not_found, exc_ini_not_initialized);
 
     template<class T>
-    T GetValue(const char *section_name,
-               const char *param_name) const throw(exc_ini_not_found, exc_ini_not_initialized, exc_wrong_type) {
+    T GetValue(const std::string &section_name,
+               const std::string &param_name) const throw(exc_ini_not_found, exc_ini_not_initialized, exc_wrong_type) {
         if (dataStore.empty()) {
-            throw exc_ini_not_initialized("EXCEPTION: \"File is not initialized\"");
+            throw exc_ini_not_found("EXCEPTION: \"Parameter \"" + param_name + "\" not found!\"");
         }
         bool check = false;
-        std::map<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char>>>::const_iterator it;
-        for (it = dataStore.at(section_name).begin(); it != dataStore.at(section_name).end(); ++it) {
-            if (param_name == it->first) {
+        for (auto it : dataStore.at(section_name)) {
+            if (param_name == it.first) {
                 check = true;
             }
         }

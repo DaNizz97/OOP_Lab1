@@ -23,8 +23,8 @@ algorithm
 -
 exc_io.h
 C:/Users/DNS/CLionProjects/OOP/Laba1/exc_io.h
-exc_ini_not_initied.h
-C:/Users/DNS/CLionProjects/OOP/Laba1/exc_ini_not_initied.h
+exc_ini_not_initialized.h
+C:/Users/DNS/CLionProjects/OOP/Laba1/exc_ini_not_initialized.h
 exc_ini_not_found.h
 C:/Users/DNS/CLionProjects/OOP/Laba1/exc_ini_not_found.h
 exc_wrong_type.h
@@ -40,7 +40,7 @@ C:/Users/DNS/CLionProjects/OOP/Laba1/exc_ini_not_found.h
 allExceptions.h
 C:/Users/DNS/CLionProjects/OOP/Laba1/allExceptions.h
 
-C:/Users/DNS/CLionProjects/OOP/Laba1/exc_ini_not_initied.h
+C:/Users/DNS/CLionProjects/OOP/Laba1/exc_ini_not_initialized.h
 allExceptions.h
 C:/Users/DNS/CLionProjects/OOP/Laba1/allExceptions.h
 
