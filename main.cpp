@@ -6,7 +6,7 @@ int main()
     try {
         IniParser iniParser;
         iniParser.initialize("9.ini");
-        cout << iniParser.getValue<string>("DEMODS", "FileName") << endl;
+        cout << iniParser.getValue<string>("DEBUG", "DBAddressIP") << endl;
     }
     catch (exception &e){
         e.what();
