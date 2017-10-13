@@ -99,21 +99,21 @@ void IniParser::eraseBracketsFromSection(std::string &lineOfIniFile) const {
 }
 
 template<>
-int IniParser::getValue<int>(const std::string &section_name, const std::string &param_name) const {
+int IniParser::getValue<int>(const std::string &section_name, const std::string &param_name) const throw(allExceptions){
     if(isHaveParam(section_name, param_name) && isHaveSection(section_name)){
         return stoi(dataStore.at(section_name).at(param_name));
     }
 }
 
 template<>
-double IniParser::getValue<double>(const std::string &section_name, const std::string &param_name) const {
+double IniParser::getValue<double>(const std::string &section_name, const std::string &param_name) const throw(allExceptions){
     if(isHaveParam(section_name, param_name) && isHaveSection(section_name)){
         return stod(dataStore.at(section_name).at(param_name));
     }
 }
 
 template<>
-string IniParser::getValue<string>(const std::string &section_name, const std::string &param_name) const {
+string IniParser::getValue<string>(const std::string &section_name, const std::string &param_name) const throw(allExceptions){
     if(isHaveParam(section_name, param_name) && isHaveSection(section_name)){
         return dataStore.at(section_name).at(param_name);
     }

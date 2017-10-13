@@ -41,7 +41,7 @@ public:
 
     template<typename T>
     T getValue(const std::string &section_name,
-               const std::string &param_name) const throw(exc_ini_not_found, exc_ini_not_initialized);
+               const std::string &param_name) const throw(allExceptions);
 };
 
 #endif //LABA1_INIPARSER_H
