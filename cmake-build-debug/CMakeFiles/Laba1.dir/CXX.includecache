@@ -7,6 +7,8 @@
 #IncludeRegexTransform: 
 
 C:/Users/DNS/CLionProjects/OOP/Laba1/IniParser.cpp
+algorithm
+-
 IniParser.h
 C:/Users/DNS/CLionProjects/OOP/Laba1/IniParser.h
 
@@ -27,8 +29,6 @@ exc_ini_not_initialized.h
 C:/Users/DNS/CLionProjects/OOP/Laba1/exc_ini_not_initialized.h
 exc_ini_not_found.h
 C:/Users/DNS/CLionProjects/OOP/Laba1/exc_ini_not_found.h
-exc_wrong_type.h
-C:/Users/DNS/CLionProjects/OOP/Laba1/exc_wrong_type.h
 
 C:/Users/DNS/CLionProjects/OOP/Laba1/allExceptions.h
 exception
@@ -45,10 +45,6 @@ allExceptions.h
 C:/Users/DNS/CLionProjects/OOP/Laba1/allExceptions.h
 
 C:/Users/DNS/CLionProjects/OOP/Laba1/exc_io.h
-allExceptions.h
-C:/Users/DNS/CLionProjects/OOP/Laba1/allExceptions.h
-
-C:/Users/DNS/CLionProjects/OOP/Laba1/exc_wrong_type.h
 allExceptions.h
 C:/Users/DNS/CLionProjects/OOP/Laba1/allExceptions.h
 

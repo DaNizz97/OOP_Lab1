@@ -7,13 +7,11 @@ CMakeFiles/Laba1.dir/IniParser.cpp.obj: ../allExceptions.h
 CMakeFiles/Laba1.dir/IniParser.cpp.obj: ../exc_ini_not_found.h
 CMakeFiles/Laba1.dir/IniParser.cpp.obj: ../exc_ini_not_initialized.h
 CMakeFiles/Laba1.dir/IniParser.cpp.obj: ../exc_io.h
-CMakeFiles/Laba1.dir/IniParser.cpp.obj: ../exc_wrong_type.h
 
 CMakeFiles/Laba1.dir/main.cpp.obj: ../IniParser.h
 CMakeFiles/Laba1.dir/main.cpp.obj: ../allExceptions.h
 CMakeFiles/Laba1.dir/main.cpp.obj: ../exc_ini_not_found.h
 CMakeFiles/Laba1.dir/main.cpp.obj: ../exc_ini_not_initialized.h
 CMakeFiles/Laba1.dir/main.cpp.obj: ../exc_io.h
-CMakeFiles/Laba1.dir/main.cpp.obj: ../exc_wrong_type.h
 CMakeFiles/Laba1.dir/main.cpp.obj: ../main.cpp
 

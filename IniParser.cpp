@@ -1,12 +1,13 @@
 //
 // Created by DNS on 17.09.2017.
 //
+#include <algorithm>
 #include "IniParser.h"
 
 using namespace std;
 typedef unsigned long long int ulli;
 
-void IniParser::Initialize(const char *filename_cstr)  throw(exc_io) {
+void IniParser::initialize(const char *filename_cstr)  throw(exc_io) {
     ifstream file(filename_cstr);
     if (!file.good()) {
         throw exc_io("EXCEPTION: \"File not found!\"");
@@ -35,6 +36,7 @@ void IniParser::Initialize(const char *filename_cstr)  throw(exc_io) {
             assignmentValue(lineOfIniFile, sectionName, parameterName, parameterValue);
         }
     }
+    file.close();
     init = true;
 }
 
@@ -46,7 +48,7 @@ void IniParser::assignmentValue(string &lineOfIniFile, const string &sectionName
     dataStore[sectionName][parameterName] = parameterValue;
 }
 
-bool IniParser::IsHaveSection(const std::string &section_name) const throw(exc_ini_not_found, exc_ini_not_initialized) {
+bool IniParser::isHaveSection(const std::string &section_name) const throw(exc_ini_not_found, exc_ini_not_initialized) {
     if (!init) {
         throw exc_ini_not_initialized("EXCEPTION: \"File is not initialized!\"");
     }
@@ -62,7 +64,7 @@ bool IniParser::IsHaveSection(const std::string &section_name) const throw(exc_i
     return check;
 }
 
-bool IniParser::IsHaveParam(const std::string &section_name,
+bool IniParser::isHaveParam(const std::string &section_name,
                             const std::string &param_name) const throw(exc_ini_not_initialized, exc_ini_not_found) {
     if (!init) {
         throw exc_ini_not_initialized("EXCEPTION: \"File is not initialized!\"");
@@ -96,6 +98,25 @@ void IniParser::eraseBracketsFromSection(std::string &lineOfIniFile) const {
     lineOfIniFile = lineOfIniFile.substr(firstBracket + 1, secondBracket - 1);
 }
 
+template<>
+int IniParser::getValue<int>(const std::string &section_name, const std::string &param_name) const {
+    if(isHaveParam(section_name, param_name) && isHaveSection(section_name)){
+        return stoi(dataStore.at(section_name).at(param_name));
+    }
+}
 
+template<>
+double IniParser::getValue<double>(const std::string &section_name, const std::string &param_name) const {
+    if(isHaveParam(section_name, param_name) && isHaveSection(section_name)){
+        return stod(dataStore.at(section_name).at(param_name));
+    }
+}
+
+template<>
+string IniParser::getValue<string>(const std::string &section_name, const std::string &param_name) const {
+    if(isHaveParam(section_name, param_name) && isHaveSection(section_name)){
+        return dataStore.at(section_name).at(param_name);
+    }
+}
 IniParser::~IniParser() = default;
 
