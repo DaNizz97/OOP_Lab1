@@ -13,17 +13,17 @@ void IniParser::initialize(const char *filename_cstr)  throw(exc_io) {
         throw exc_io("EXCEPTION: \"File not found!\"");
     }
     string lineOfIniFile, sectionName, parameterName, parameterValue;
-    while ( !file.eof() && getline(file, lineOfIniFile) ) {
+    while (!file.eof() && getline(file, lineOfIniFile)) {
         eraseComments(lineOfIniFile);
         if (lineOfIniFile.empty()) {
             continue;
         }
-        if ( isLineSection(lineOfIniFile) ) {
+        if (isLineSection(lineOfIniFile)) {
             eraseBracketsFromSection(lineOfIniFile);
             sectionName = lineOfIniFile;
         }
         assignmentValue(lineOfIniFile, sectionName, parameterName, parameterValue);
-        while ( !isLineSection(lineOfIniFile) && !file.eof() && getline(file, lineOfIniFile) ) {
+        while (!isLineSection(lineOfIniFile) && !file.eof() && getline(file, lineOfIniFile)) {
             eraseComments(lineOfIniFile);
             if (isLineSection(lineOfIniFile)) {
                 eraseBracketsFromSection(lineOfIniFile);
@@ -40,7 +40,8 @@ void IniParser::initialize(const char *filename_cstr)  throw(exc_io) {
     init = true;
 }
 
-void IniParser::assignmentValue(string &lineOfIniFile, const string &sectionName, string &parameterName, string &parameterValue) {
+void IniParser::assignmentValue(string &lineOfIniFile, const string &sectionName, string &parameterName,
+                                string &parameterValue) {
     lineOfIniFile.erase(remove(lineOfIniFile.begin(), lineOfIniFile.end(), ' '), lineOfIniFile.end());
     ulli equalPosition = lineOfIniFile.find('=');
     parameterName = lineOfIniFile.substr(0, equalPosition);
@@ -58,7 +59,7 @@ bool IniParser::isHaveSection(const std::string &section_name) const throw(exc_i
             check = true;
         }
     }
-    if(!check){
+    if (!check) {
         throw exc_ini_not_found("EXCEPTION: \"Section \"" + section_name + "\" not found!\"");
     }
     return check;
@@ -99,24 +100,28 @@ void IniParser::eraseBracketsFromSection(std::string &lineOfIniFile) const {
 }
 
 template<>
-int IniParser::getValue<int>(const std::string &section_name, const std::string &param_name) const throw(allExceptions){
-    if(isHaveParam(section_name, param_name) && isHaveSection(section_name)){
+int
+IniParser::getValue<int>(const std::string &section_name, const std::string &param_name) const throw(allExceptions) {
+    if (isHaveParam(section_name, param_name) && isHaveSection(section_name)) {
         return stoi(dataStore.at(section_name).at(param_name));
     }
 }
 
 template<>
-double IniParser::getValue<double>(const std::string &section_name, const std::string &param_name) const throw(allExceptions){
-    if(isHaveParam(section_name, param_name) && isHaveSection(section_name)){
+double
+IniParser::getValue<double>(const std::string &section_name, const std::string &param_name) const throw(allExceptions) {
+    if (isHaveParam(section_name, param_name) && isHaveSection(section_name)) {
         return stod(dataStore.at(section_name).at(param_name));
     }
 }
 
 template<>
-string IniParser::getValue<string>(const std::string &section_name, const std::string &param_name) const throw(allExceptions){
-    if(isHaveParam(section_name, param_name) && isHaveSection(section_name)){
+string
+IniParser::getValue<string>(const std::string &section_name, const std::string &param_name) const throw(allExceptions) {
+    if (isHaveParam(section_name, param_name) && isHaveSection(section_name)) {
         return dataStore.at(section_name).at(param_name);
     }
 }
+
 IniParser::~IniParser() = default;
 

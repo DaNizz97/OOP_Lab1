@@ -11,8 +11,30 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0256165-3817-492b-9336-aef1cd712e71" name="Default" comment="">
+    <list default="true" id="f0256165-3817-492b-9336-aef1cd712e71" name="Default" comment="Final">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/main.cpp.obj" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/main.cpp.obj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/objects.a" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/objects.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Laba1.exe" afterPath="$PROJECT_DIR$/cmake-build-debug/Laba1.exe" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IniParser.cpp" afterPath="$PROJECT_DIR$/IniParser.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/IniParser.h" afterPath="$PROJECT_DIR$/IniParser.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/allExceptions.h" afterPath="$PROJECT_DIR$/allExceptions.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/cmake_clean.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/depend.internal" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/depend.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/depend.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/flags.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Laba1.dir/progress.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Laba1.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/Laba1.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exc_ini_not_found.h" afterPath="$PROJECT_DIR$/exc_ini_not_found.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exc_ini_not_initialized.h" afterPath="$PROJECT_DIR$/exc_ini_not_initialized.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exc_io.h" afterPath="$PROJECT_DIR$/exc_io.h" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -41,33 +63,43 @@
       <file leaf-file-name="9.ini" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cmake-build-debug/9.ini">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
+            <state relative-caret-position="731">
               <caret line="43" column="11" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.cpp">
+      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IniParser.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="75" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IniParser.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IniParser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="-1345">
+              <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
               <folding>
                 <element signature="e#39#59#0" expanded="true" />
-                <element signature="e#3517#3519#0" expanded="true" />
-                <element signature="e#3800#3802#0" expanded="true" />
-                <element signature="e#4089#4091#0" expanded="true" />
+                <element signature="e#3545#3547#0" expanded="true" />
+                <element signature="e#3831#3833#0" expanded="true" />
+                <element signature="e#4123#4125#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,11 +108,11 @@
       <file leaf-file-name="IniParser.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/IniParser.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="559">
-              <caret line="43" column="71" lean-forward="false" selection-start-line="43" selection-start-column="71" selection-end-line="43" selection-end-column="71" />
+            <state relative-caret-position="255">
+              <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
-                <element signature="e#92#111#0" expanded="true" />
-                <element signature="e#1139#1151#0" expanded="true" />
+                <element signature="e#93#112#0" expanded="true" />
+                <element signature="e#1167#1179#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +133,8 @@
       <file leaf-file-name="exc_ini_not_found.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exc_ini_not_found.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
+            <state relative-caret-position="187">
+              <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -111,8 +143,8 @@
       <file leaf-file-name="exc_ini_not_initialized.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exc_ini_not_initialized.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+            <state relative-caret-position="187">
+              <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -121,8 +153,8 @@
       <file leaf-file-name="exc_io.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exc_io.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+            <state relative-caret-position="187">
+              <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -146,15 +178,15 @@
         <option value="$PROJECT_DIR$/IOException.h" />
         <option value="$PROJECT_DIR$/exc_cfg_not_initied.h" />
         <option value="$PROJECT_DIR$/exc_cfg_not_found.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/exc_ini_not_initied.h" />
-        <option value="$PROJECT_DIR$/exc_ini_not_initialized.h" />
+        <option value="$PROJECT_DIR$/exc_wrong_type.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/IniParser.cpp" />
+        <option value="$PROJECT_DIR$/IniParser.h" />
         <option value="$PROJECT_DIR$/allExceptions.h" />
         <option value="$PROJECT_DIR$/exc_ini_not_found.h" />
-        <option value="$PROJECT_DIR$/exc_wrong_type.h" />
+        <option value="$PROJECT_DIR$/exc_ini_not_initialized.h" />
         <option value="$PROJECT_DIR$/exc_io.h" />
-        <option value="$PROJECT_DIR$/IniParser.h" />
-        <option value="$PROJECT_DIR$/IniParser.cpp" />
         <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
@@ -165,7 +197,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="793" />
     <option name="width" value="814" />
     <option name="height" value="867" />
@@ -440,7 +472,8 @@
       <workItem from="1506363134120" duration="686000" />
       <workItem from="1507740716298" duration="10455000" />
       <workItem from="1507822989529" duration="6014000" />
-      <workItem from="1507924988190" duration="8466000" />
+      <workItem from="1507924988190" duration="8529000" />
+      <workItem from="1508014416789" duration="439000" />
     </task>
     <task id="LOCAL-00001" summary="explicit added">
       <created>1507741253066</created>
@@ -491,11 +524,18 @@
       <option name="project" value="LOCAL" />
       <updated>1507933265705</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Final">
+      <created>1507933503587</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1507933503587</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70639000" />
+    <option name="totallyTimeSpent" value="71141000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -507,16 +547,16 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42673522" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13174807" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41143653" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32775453" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -644,9 +684,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#39#59#0" expanded="true" />
-            <element signature="e#3517#3519#0" expanded="true" />
-            <element signature="e#3800#3802#0" expanded="true" />
-            <element signature="e#4089#4091#0" expanded="true" />
+            <element signature="e#3545#3547#0" expanded="true" />
+            <element signature="e#3831#3833#0" expanded="true" />
+            <element signature="e#4123#4125#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -656,20 +696,13 @@
         <state relative-caret-position="493">
           <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding>
-            <element signature="e#92#111#0" expanded="true" />
-            <element signature="e#1139#1151#0" expanded="true" />
+            <element signature="e#93#112#0" expanded="true" />
+            <element signature="e#1167#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h" />
     <entry file="file://$PROJECT_DIR$/exc_io.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -699,9 +732,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#39#59#0" expanded="true" />
-            <element signature="e#3517#3519#0" expanded="true" />
-            <element signature="e#3800#3802#0" expanded="true" />
-            <element signature="e#4089#4091#0" expanded="true" />
+            <element signature="e#3545#3547#0" expanded="true" />
+            <element signature="e#3831#3833#0" expanded="true" />
+            <element signature="e#4123#4125#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -711,20 +744,13 @@
         <state relative-caret-position="493">
           <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
           <folding>
-            <element signature="e#92#111#0" expanded="true" />
-            <element signature="e#1139#1151#0" expanded="true" />
+            <element signature="e#93#112#0" expanded="true" />
+            <element signature="e#1167#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h" />
     <entry file="file://$PROJECT_DIR$/exc_io.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -754,9 +780,9 @@
           <caret line="71" column="103" lean-forward="false" selection-start-line="71" selection-start-column="84" selection-end-line="71" selection-end-column="103" />
           <folding>
             <element signature="e#39#59#0" expanded="true" />
-            <element signature="e#3517#3519#0" expanded="true" />
-            <element signature="e#3800#3802#0" expanded="true" />
-            <element signature="e#4089#4091#0" expanded="true" />
+            <element signature="e#3545#3547#0" expanded="true" />
+            <element signature="e#3831#3833#0" expanded="true" />
+            <element signature="e#4123#4125#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -766,20 +792,13 @@
         <state relative-caret-position="187">
           <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
           <folding>
-            <element signature="e#92#111#0" expanded="true" />
-            <element signature="e#1139#1151#0" expanded="true" />
+            <element signature="e#93#112#0" expanded="true" />
+            <element signature="e#1167#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h" />
     <entry file="file://$PROJECT_DIR$/exc_io.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -809,9 +828,9 @@
           <caret line="87" column="17" lean-forward="true" selection-start-line="87" selection-start-column="17" selection-end-line="87" selection-end-column="17" />
           <folding>
             <element signature="e#39#59#0" expanded="true" />
-            <element signature="e#3517#3519#0" expanded="true" />
-            <element signature="e#3800#3802#0" expanded="true" />
-            <element signature="e#4089#4091#0" expanded="true" />
+            <element signature="e#3545#3547#0" expanded="true" />
+            <element signature="e#3831#3833#0" expanded="true" />
+            <element signature="e#4123#4125#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -821,20 +840,13 @@
         <state relative-caret-position="119">
           <caret line="7" column="18" lean-forward="false" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
-            <element signature="e#92#111#0" expanded="true" />
-            <element signature="e#1139#1151#0" expanded="true" />
+            <element signature="e#93#112#0" expanded="true" />
+            <element signature="e#1167#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="67" lean-forward="false" selection-start-line="12" selection-start-column="67" selection-end-line="12" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h" />
     <entry file="file://$PROJECT_DIR$/exc_io.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -864,9 +876,9 @@
           <caret line="41" column="7" lean-forward="false" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
           <folding>
             <element signature="e#39#59#0" expanded="true" />
-            <element signature="e#3517#3519#0" expanded="true" />
-            <element signature="e#3800#3802#0" expanded="true" />
-            <element signature="e#4089#4091#0" expanded="true" />
+            <element signature="e#3545#3547#0" expanded="true" />
+            <element signature="e#3831#3833#0" expanded="true" />
+            <element signature="e#4123#4125#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -876,8 +888,8 @@
         <state relative-caret-position="408">
           <caret line="24" column="49" lean-forward="true" selection-start-line="24" selection-start-column="49" selection-end-line="24" selection-end-column="49" />
           <folding>
-            <element signature="e#92#111#0" expanded="true" />
-            <element signature="e#1139#1151#0" expanded="true" />
+            <element signature="e#93#112#0" expanded="true" />
+            <element signature="e#1167#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -918,9 +930,9 @@
           <caret line="5" column="78" lean-forward="false" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
           <folding>
             <element signature="e#39#59#0" expanded="true" />
-            <element signature="e#3517#3519#0" expanded="true" />
-            <element signature="e#3800#3802#0" expanded="true" />
-            <element signature="e#4089#4091#0" expanded="true" />
+            <element signature="e#3545#3547#0" expanded="true" />
+            <element signature="e#3831#3833#0" expanded="true" />
+            <element signature="e#4123#4125#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -930,8 +942,8 @@
         <state relative-caret-position="306">
           <caret line="18" column="22" lean-forward="false" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
           <folding>
-            <element signature="e#92#111#0" expanded="true" />
-            <element signature="e#1139#1151#0" expanded="true" />
+            <element signature="e#93#112#0" expanded="true" />
+            <element signature="e#1167#1179#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -965,13 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="28" lean-forward="false" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/lab01_input_correct_01.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -986,43 +991,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exc_ini_not_initialized.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="43" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exc_io.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="30" lean-forward="true" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/exc_ini_not_found.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="59" lean-forward="false" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/exc_wrong_type.h" />
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/example.ini">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="11" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/9.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" column="11" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IniParser.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="8" lean-forward="false" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+          <folding>
+            <element signature="e#93#112#0" expanded="true" />
+            <element signature="e#1167#1179#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1036,34 +1037,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IniParser.h">
+    <entry file="file://$PROJECT_DIR$/exc_ini_not_found.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="559">
-          <caret line="43" column="71" lean-forward="false" selection-start-line="43" selection-start-column="71" selection-end-line="43" selection-end-column="71" />
-          <folding>
-            <element signature="e#92#111#0" expanded="true" />
-            <element signature="e#1139#1151#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="59" lean-forward="false" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IniParser.cpp">
+    <entry file="file://$PROJECT_DIR$/exc_ini_not_initialized.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#39#59#0" expanded="true" />
-            <element signature="e#3517#3519#0" expanded="true" />
-            <element signature="e#3800#3802#0" expanded="true" />
-            <element signature="e#4089#4091#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="43" lean-forward="false" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/9.ini">
+    <entry file="file://$PROJECT_DIR$/exc_io.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="43" column="11" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="11" />
+        <state relative-caret-position="187">
+          <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding />
         </state>
       </provider>
@@ -1071,8 +1064,21 @@
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="49" lean-forward="false" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+          <caret line="8" column="75" lean-forward="false" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IniParser.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1345">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#39#59#0" expanded="true" />
+            <element signature="e#3545#3547#0" expanded="true" />
+            <element signature="e#3831#3833#0" expanded="true" />
+            <element signature="e#4123#4125#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

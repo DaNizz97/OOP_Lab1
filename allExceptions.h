@@ -7,9 +7,9 @@
 #include <exception>
 #include <iostream>
 
-class allExceptions: public std::exception {
+class allExceptions : public std::exception {
 public:
-    explicit allExceptions(const std::string &message){
+    explicit allExceptions(const std::string &message) {
         std::cout << message << std::endl;
     }
 };

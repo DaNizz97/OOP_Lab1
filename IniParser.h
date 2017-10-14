@@ -4,6 +4,7 @@
 
 #ifndef LABA1_INIPARSER_H
 #define LABA1_INIPARSER_H
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -12,18 +13,21 @@
 #include "exc_io.h"
 #include "exc_ini_not_initialized.h"
 #include "exc_ini_not_found.h"
+
 class IniParser {
 private:
     std::map<std::string, std::map<std::string, std::string>> dataStore;
 
     bool init = false;
+
     void eraseComments(std::string &lineOfIniFile) const;
 
     bool isLineSection(const std::string &lineOfIniFile) const;
 
     void eraseBracketsFromSection(std::string &lineOfIniFile) const;
 
-    void assignmentValue(std::string &lineOfIniFile, const std::string &sectionName, std::string &parameterName, std::string &parameterValue);
+    void assignmentValue(std::string &lineOfIniFile, const std::string &sectionName, std::string &parameterName,
+                         std::string &parameterValue);
 
 public:
 
